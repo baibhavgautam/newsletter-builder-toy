@@ -1,4 +1,4 @@
-class Photo < Article
+class CoreValue < Article
 
   validates_presence_of :image_url
 

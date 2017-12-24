@@ -1,22 +1,8 @@
 class Text < Article
 
-    # validate :text_content_is_present?
+  validates_presence_of :text_content
 
-    # attr_reader
-    # def text_content
-    #   content[:text_content]
-    # end
-
-    # attr_setter
-    # def text_content=(content)
-    #   self.content[:text_content] = content
-    # end
-   #
-   # private
-   #
-   # def text_content_is_present?
-   #   errors.add(:text_content, '`text_content` not found') &&
-   #     return if content[:text_content].nil?
-   # end
+  jsonb_accessor :content,
+    text_content: :string
 
 end
