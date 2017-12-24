@@ -14,7 +14,7 @@ class NewPeople < Article
     employee_name_three: :string,
     job_title_one: :string,
     job_title_two: :string,
-    job_title_three: :string
+    job_title_three: :string,
     branch_one: :string,
     branch_two: :string,
     branch_three: :string
